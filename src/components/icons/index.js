@@ -1,3 +1,5 @@
+export { default as ArrowLeft } from './ArrowLeft'
+export { default as ArrowRight } from './ArrowRight'
 export { default as Bag } from './Bag'
 export { default as Call } from './Call'
 export { default as Email } from './Email'

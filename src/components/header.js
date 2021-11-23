@@ -51,7 +51,7 @@ const Header = ({ siteTitle }) => {
       <StaticImage src="../images/logo.png" layout="fixed" width={200} height={200} />
       <div className="flex items-center w-1/2">
           <input type="text" placeholder="Search..." className="flex-1 border-2 rounded-md px-4 py-3"/>
-          <button className="p-3 bg-pink-400 rounded-md text-white ml-3">
+          <button className="p-3 bg-pink-700 rounded-md text-white ml-3">
             <Search />
           </button>
       </div>
@@ -67,7 +67,7 @@ const Header = ({ siteTitle }) => {
     {/* //* Links */}
     <div className="flex items-center justify-between container mx-auto">
       <div className="flex items-center">
-        <Link to="" className={`text-xl font-semibold mr-6 ${current ? 'px-3 py-2 rounded-md bg-pink-400 text-gray-50' : 'text-gray-800'}`}>
+        <Link to="" className={`text-xl font-semibold mr-6 ${current ? 'px-3 py-2 rounded-md bg-pink-700 text-gray-50' : 'text-gray-800'}`}>
           <a>Home</a>
         </Link>
         <Link to="" className={`text-xl text-gray-800 font-semibold mr-6`}>
@@ -84,9 +84,9 @@ const Header = ({ siteTitle }) => {
         </Link>
       </div>
       <div className="flex items-center">
-        <button className="w-12 h-10 bg-pink-400 text-white text-sm rounded-md mr-2">EN</button>
-        <button className="w-12 h-10 bg-pink-400 text-white text-sm rounded-md mr-2">SL</button>
-        <button className="w-12 h-10 bg-pink-400 text-white text-sm rounded-md mr-2">TM</button>
+        <button className="w-12 h-10 bg-pink-700 text-white text-sm rounded-md mr-2">EN</button>
+        <button className="w-12 h-10 bg-pink-700 text-white text-sm rounded-md mr-2">SL</button>
+        <button className="w-12 h-10 bg-pink-700 text-white text-sm rounded-md mr-2">TM</button>
       </div>
     </div>
   </header>
