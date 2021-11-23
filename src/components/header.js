@@ -48,7 +48,7 @@ const Header = ({ siteTitle }) => {
     </div>
     {/* //* Middle Search */}
     <div className="flex items-center container mx-auto justify-between">
-      <StaticImage src="../images/logo.png" layout="fixed" width={200} height={200} />
+      <StaticImage src="../images/logo.png" layout="fixed" width={200} height={200} alt="logo"/>
       <div className="flex items-center w-1/2">
           <input type="text" placeholder="Search..." className="flex-1 border-2 rounded-md px-4 py-3"/>
           <button className="p-3 bg-pink-700 rounded-md text-white ml-3">
