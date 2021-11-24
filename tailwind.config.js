@@ -1,11 +1,14 @@
 module.exports = {
-  purge: [],
+  purge: [
+  ],
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {},
   },
   variants: {
-    extend: {},
+    extend: {
+      opacity: ['disabled'],
+    },
   },
   plugins: [],
 }

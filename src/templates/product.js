@@ -5,12 +5,14 @@ import PlusIcon from "../components/icons/PlusIcon"
 import Bag from "../components/icons/Bag"
 import ArrowLeft from "../components/icons/ArrowLeft"
 import { navigate } from 'gatsby-link';
+import useStore from '../context/storeContext';
 
 function ProductTemplate({ pageContext }) {
 
     const { product } = pageContext;
     const [counter, setCounter] = useState(0);
     const [price, setPrice] = useState(product?.priceRangeV2.maxVariantPrice.amount);
+    const { addVariantToCart } = useStore()
 
     console.log(product);
 
@@ -76,7 +78,7 @@ function ProductTemplate({ pageContext }) {
                             </div>
                             <div className="flex items-center justify-between px-10 mt-10 w-1/2">
                                 <h1 className="text-3xl font-semibold text-gray-900">Rs {price}0</h1>
-                                <button className="text-gray-50 flex items-center bg-pink-700 rounded-3xl px-6 py-4 transform transition duration-300 hover:bg-pink-800" onClick={() => alert('Added to cart')}>
+                                <button className="text-gray-50 flex items-center bg-pink-700 rounded-3xl px-6 py-4 transform transition duration-300 hover:bg-pink-800" onClick={() => addVariantToCart(product, counter)}>
                                         <h3 className="mr-3 text-xl">Get</h3>
                                         <Bag width={20} height={20} />
                                 </button>

@@ -16,7 +16,7 @@ function ProductCard({product}) {
             <h4 className="text-xl text-gray-800 font-semibold">Rs.{product?.priceRangeV2.maxVariantPrice.amount}</h4>
             {
                 hover ? (
-                    <button className="absolute top-5 right-5 transform text-gray-50 bg-pink-700 p-3 rounded-full transition duration-300 hover:bg-pink-800 hover:scale-110" onClick={() => addVariantToCart(product, 1)}><PlusIcon width={20} height={20} /></button>
+                    <button className="absolute top-5 right-5 transform text-gray-50 bg-pink-700 p-3 rounded-full transition duration-300 hover:bg-pink-800 hover:scale-110" onClick={() => {addVariantToCart(product, 1); alert('Added to cart')}}><PlusIcon width={20} height={20} /></button>
                 ) : null
             }
         </div>
