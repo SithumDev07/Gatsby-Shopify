@@ -67,9 +67,11 @@ const Header = ({ siteTitle, onlyUpper = true }) => {
             <button className="p-3 bg-gray-300 rounded-md text-gray-500 mr-5">
               <Profile />
             </button>
-            <button className="p-3 bg-gray-300 rounded-md text-gray-500">
-              <Bag />
-            </button>
+            <Link to="/cart">
+              <button className="p-3 bg-gray-300 rounded-md text-gray-500">
+                <Bag />
+              </button>
+            </Link>
           </div>
         </div>
 
