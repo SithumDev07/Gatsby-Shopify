@@ -12,7 +12,7 @@
  import Header from "./header"
 //  import "./layout.css"
  
- const Layout = ({ children }) => {
+ const Layout = ({ children, onlyUpper = true }) => {
    const data = useStaticQuery(graphql`
      query SiteTitleQuery {
        site {
@@ -25,7 +25,7 @@
  
    return (
      <>
-       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
+       <Header onlyUpper={onlyUpper} siteTitle={data.site.siteMetadata?.title || `Title`} />
        <div>
          <main>{children}</main>
          <footer className="mt-5 text-center">
